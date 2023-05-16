@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2rem;
+}
+.search {
+  border: 1px solid gray;
+  outline: none;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.mealWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.mealWrapper .meal {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+.mealWrapper .meal img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+.mealWrapper .meal div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
